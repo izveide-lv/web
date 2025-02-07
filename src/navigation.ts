@@ -82,9 +82,9 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/labojam.lv' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/labojam' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/izveide-lv' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/izveide-lv/web' },
   ],
   footNote: `
-    Veidojis <a class="text-blue-600 underline dark:text-muted" href="https://labojam.lv">"Sociālais kods"</a>
+    Veidots SIA "<a class="text-blue-600 underline dark:text-muted" href="https://labojam.lv">Sociālais kods</a>"
   `,
 };
