@@ -426,5 +426,7 @@ import { UI } from 'astrowind:config';
     containers.split('|').forEach((container) => new Termynal(container));
   }
 
-  new Termynal('#termynal');
+  if (document.getElementById('termynal')) {
+    new Termynal('#termynal');
+  }
 </script>
