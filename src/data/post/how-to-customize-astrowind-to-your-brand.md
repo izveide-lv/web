@@ -10,7 +10,7 @@ tags:
   - astro
   - tailwind css
   - theme
-image: /_astro/default.png
+image: ~/assets/images/default.png
 publishDate: 2023-08-06T00:00:00.000Z
 ---
 
