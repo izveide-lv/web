@@ -11,7 +11,7 @@ metadata:
   title:
     default: Izveide
     template: '%s — Izveide'
-  description: 'Ātru un ērtu mājaslapu izveides speciālists'
+  description: 'Ātru un ērtu statisko mājaslapu izveide'
   robots:
     index: true
     follow: true
