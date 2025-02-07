@@ -4,49 +4,50 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Ātru un ērtu mājaslapu izveide',
   ignoreTitleTemplate: true,
 };
+
+import iveta from './src/assets/images/iveta.webp';
+import raimonds from './src/assets/images/raimonds.webp';
+import ivars from './src/assets/images/ivars.webp';
+import armands from './src/assets/images/armands.webp';
+import Pricing from '~/components/widgets/Pricing.astro';
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
+  <div id="termynal" data-termynal data-ty-typeDelay="20" data-ty-lineDelay="300">
+    <span data-ty="input">Izveido man mājaslapu</span>
+    <span data-ty="progress"></span>
+    <span data-ty>Mājaslapa izveidota! 🚀</span>
+  </div>
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Uzzināt vairāk',
+        href: '#features',
+        target: '',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Cenas', href: '/pricing' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      Ātru un ērtu
+      <span class="text-accent highlight">statisko</span> mājaslapu izveide
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Es izstrādāju drošas mājaslapas, kas darbojas zibenīgi un ir viegli administrējamas.
     </Fragment>
   </Hero>
 
@@ -58,45 +59,114 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Priekšrocības"
+    title="Kas ir statiskās mājaslapas?"
+    subtitle="Statiska mājaslapa ir tīmekļa vietne, kuras saturs tiek glabāts un piegādāts lietotājam tieši tādā formā, kādā tas ir saglabāts serverī, bez datubāžu izmantošanas."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Uzlabota drošība',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Tā kā nav servera puses skriptu vai datubāzes, statiskās mājaslapas ir <strong>drošas un teju neuzlaužamas.</strong>',
+        icon: 'tabler:shield-lock',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Lielisks ātrums',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Tā kā nav nepieciešama servera puses apstrāde vai datubāzes pieprasījumi, statiskās mājaslapas <strong>ielādējas daudz ātrāk</strong> nekā dinamiskās.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Vienkārša uzturēšana',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Tā kā nav sarežģītu servera puses tehnoloģiju, uzturēšana ir ļoti vienkārša un <strong>bez maksas</strong>.',
+        icon: 'tabler:server-spark',
       },
       {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+        title: 'Iebūvēta administrācija',
+        description: 'Lapā iespējams saturu papildināt paša spēkiem, bez programmēšanas priekšzināšanām.',
+        icon: 'tabler:pencil',
+      },
+    ]}
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Klientu atsauksmes"
+    id="reviews"
+    subtitle="Strādāju rūpīgi un ar ❤️, ko apliecina mani klienti."
+    testimonials={[
+      {
+        testimonial: `<p>Man bija tas gods sadarboties ar Armandu un viņa komandu biedrības "Debesmanna" mājaslapas izveidošanā. Es teikšu atklāti, zināju, ka ir nepieciešama jauna mājaslapa, bet nezināju, ko īsti vēlos.</p>
+         <p>Ar Armandu tikāmies regulāri, viņš uzklausīja vēlmes, idejas un dalījās arī savā pieredzē par to, kā būtu labāk, ērtāk un lietotājiem draudzīgāk mājaslapu izmantot.</p>
+         <p>Man ir patiess prieks, ka Armands atsaucās manam lūgumam un zinu, ka nevaru vēlēties labāku komandu. Es tiku saredzēta un sadzirdēta, kas man ir svarīgi.</p>
+         <p>Liels paldies Armandam un viņa komandai par lielisko darbu, un no sirds vēlos ieteikt arī jums, ja ir nepieciešama jauna vai uzlabota mājaslapa.</p>`,
+        name: 'Iveta Parravani',
+        job: 'Biedrība "Debesmanna"',
+        image: {
+          src: iveta,
+          alt: 'Iveta Parravani',
+        },
+      },
+      {
+        testimonial: `<p>Armands Leimanis ir superīgs web programmētājs, kas pirms kāda laika ir izveidojis savu web programmāšanas firmiņu. Sadarbojoties ar Armandu, man nav neērti uzdot dīvainus jautājumus saistībā ar weblapu programmēšanu, jo es zinu, ka viņš ar visdziļāko sapratni man visu izskaidros "cilvēku" valodā.</p>
+        <p>Pie Armanda var griezties ne tikai lapu vai aplikāciju programmēšanā no nulles, bet arī gadījumos, kad ir jāsalabo vai jāpapildina esošais risinājums. Droši zvaniet, rakstiet, traucējiet viņu! Silti iesaku un rekomendēju.</p>`,
+        name: 'Raimonds Platacis',
+        job: 'Nonullēšanās',
+        image: {
+          src: raimonds,
+          alt: 'Raimonds Platacis',
+        },
+      },
+      {
+        testimonial: `<p>Sadarbību ar Armandu uzsākām pāris gadus atpakaļ un pa šo laiku ir realizēti vairāki projekti. Armands pieiet katram projektam loģiski un racionāli, izvērtējot plānoto arhitektūru un pielietojamos instrumentus.</p>
+        <p>Tehniskie risinājumi tiek izdarīti precīzi kā runāts, tai pat laikā vienmēr var sagaidīt ieteikumus no pieredzes, kas ļoti noder veiksmīgai projekta attīstībai.</p>`,
+        name: 'Ivars Mirošnikovs',
+        job: 'VIVID TECH',
+        image: {
+          src: ivars,
+          alt: 'Ivars Mirošnikovs',
+        },
+      },
+      // {
+      //   testimonial: `Ātra un efektīva palīdzība IT jautājumos. Profesionāli un nestandarta risinājumi. Attieksme ir ļoti pretimnākoša.`,
+      //   name: 'Raivo Klotiņš',
+      //   job: 'Zvērināts advokāts',
+      //   image: {
+      //     src: raivo,
+      //     alt: 'Raivo Klotiņš Image',
+      //   },
+      // },
+    ]}
+  />
+
+  <Pricing
+    title="Saprotamas cenas"
+    id="pricing"
+    prices={[
+      {
+        title: 'Mājaslapas izveide',
+        subtitle: 'Individuāli izstrādāta statiskā mājaslapa',
+        price: '1500',
+        period: 'Vienreizējs maksājums',
+        callToAction: {
+          target: '',
+          text: 'Sazināties',
+          href: '/contact',
+        },
+      },
+      {
+        title: 'Mājaslapas abonēšana',
+        subtitle: 'Nemaksā par mājaslapas izveidi',
+        price: 150,
+        period: '/ mēnesī',
+        callToAction: {
+          target: '',
+          text: 'Sazināties',
+          href: '/contact',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'izdevīgi',
       },
     ]}
   />
@@ -105,109 +175,34 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Par mani"
+    title="Programmētājs ar entuziasmu"
+    id="about"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Vairāk nekā 8 gadu pieredze',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Programmēt sāku pirms vairāk nekā 8 gadiem digitālajā aģentūrā un kopš tā laika esmu strādājis pie vairāk nekā 50 projektiem.',
       },
       {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+        title: 'Darbs kā aizraušanās',
+        description: 'Programmēšana un tehnoloģijas ir ne tikai mans darbs, bet arī mana sirdslieta un hobijs.',
       },
       {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+        title: 'Neformāla, draudzīga pieeja',
+        description: 'Esmu atvērts un vienmēr gatavs uzklausīt visas klientu vēlmes un ar mani ir viegli sastrādāties.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: armands,
+      alt: 'Armands Leimanis',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Darbu daru ar prieku 🎉</h3>
+      Programmēšanu esmu apguvis pašmācības ceļā un katru dienu turpinu papildināt savas zināšanas. Mani interesentē jaunākās
+      tehnoloģijas un modernākie risinājumi.
     </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,160 +212,65 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Mājaslapas izveides process"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+        title: 'Sazinies <span class="font-medium">ar mani</span>',
+        description: 'Izmanto kontaktformu, zvani vai raksti uz e-pastu. Es parasti atbildu tajā pašā darba dienā.',
+        icon: 'tabler:send',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+        title: 'Vienosimies <span class="font-medium">par prasībām</span>',
+        description: 'Izrunāsim visu, kas nepieciešams mājaslapai un es piedāvāšu labākos risinājumus.',
+        icon: 'tabler:message',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Izveidošu <span class="font-medium">mājaslapu</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Statisko mājaslapu izveide neaizņem ilgu laiku - tā būs gatava jau pāris nedēļu laikā vai pat ātrāk.',
+        icon: 'tabler:code-dots',
       },
       {
-        title: 'Ready!',
+        title: 'Gatavs!',
         icon: 'tabler:check',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
   />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Ieskaties manā blogā"
+    information={`Rakstu par tehnoloģijām un projektiem, kas mani interesē.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Biežāk uzdotie jautājumi"
     classes={{ container: 'max-w-6xl' }}
+    id="faq"
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Kāpēc tieši statiskās lapas?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Savā karjerā esmu strādājis ar daudz un dažādām tehnoloģijām, satura vadības sistēmām un aplikācijām, taču statiskās lapas, manuprāt, ir lielisks un moderns risinājums. Tās ir ātras, teju neuzlaužamas un lieliski kotējas meklēšanas rezultātos.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Vai iespējams izveidot e-komercijas vietni?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Jā! Ir iespējams izmantot Snipcart rīku, kas ļauj iespējot interneta veikalu arī statiskā mājaslapā. Produktu pievienošana notiek pašā vietnē, kamēr Snipcart nodrošina drošus maksājumus un kataloga uzturēšanu.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Kādas tehnoloģijas izmanto mājaslapu izveidei?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Šobrīd izmantoju Astro, Tailwind, Mattrbld, Decap CMS, Github, Netlify un Cloudflare, bet vienmēr esmu kā jauna meklējumos.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Cik maksā statiskās mājaslapas tehniskā uzturēšana?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Tā ir pilnīgi bez maksas, ja izmanto kādu no globālajiem hostinga pakalpojumu sniedzējiem, kā piemēram Netlify, Cloudflare vai Vercel.',
       },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
     ]}
   />
 
@@ -380,20 +280,103 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Sazināties',
+        href: '/contact',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+    <Fragment slot="title">Nepieciešama mājaslapa?</Fragment>
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
+    <Fragment slot="subtitle">Sazinies ar mani jau šodien!</Fragment>
   </CallToAction>
 </Layout>
+
+<style>
+  :root {
+    --color-bg: #252a33;
+    --color-text: #eee;
+    --color-text-subtle: #a2a2a2;
+  }
+
+  [data-termynal] {
+    width: 95vw;
+    max-width: 350px;
+    margin: 0 auto;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-size: 16px;
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    padding: 50px 45px 25px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  [data-termynal]:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* A little hack to display the window buttons in one pseudo element. */
+    background: #d9515d;
+    -webkit-box-shadow:
+      25px 0 0 #f4c025,
+      50px 0 0 #3ec930;
+    box-shadow:
+      25px 0 0 #f4c025,
+      50px 0 0 #3ec930;
+  }
+
+  [data-ty] {
+    display: block;
+    line-height: 2;
+  }
+
+  [data-ty]:before {
+    /* Set up defaults and ensure empty lines are displayed. */
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  [data-ty='input']:before,
+  [data-ty-prompt]:before {
+    margin-right: 0.75em;
+    color: var(--color-text-subtle);
+  }
+
+  [data-ty='input']:before {
+    content: '>';
+  }
+
+  [data-ty][data-ty-prompt]:before {
+    content: attr(data-ty-prompt);
+  }
+
+  [data-ty-cursor]:after {
+    content: attr(data-ty-cursor);
+    font-family: monospace;
+    margin-left: 0.5em;
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+  }
+
+  /* Cursor animation */
+
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+</style>

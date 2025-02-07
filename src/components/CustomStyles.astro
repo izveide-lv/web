@@ -1,5 +1,6 @@
 ---
-import '@fontsource-variable/inter';
+import '@fontsource-variable/onest';
+import '@fontsource-variable/outfit';
 
 // 'DM Sans'
 // Nunito
@@ -21,13 +22,13 @@ import '@fontsource-variable/inter';
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'Outfit Variable';
+    --aw-font-serif: 'Outfit Variable';
+    --aw-font-heading: 'Onest Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: rgb(207, 56, 18);
+    --aw-color-secondary: rgb(11, 40, 133);
+    --aw-color-accent: rgb(185, 32, 103);
 
     --aw-color-text-heading: rgb(0 0 0);
     --aw-color-text-default: rgb(16 16 16);
@@ -42,22 +43,49 @@ import '@fontsource-variable/inter';
   }
 
   .dark {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'Outfit Variable';
+    --aw-font-serif: 'Outfit Variable';
+    --aw-font-heading: 'Onest Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: rgb(207, 56, 18);
+    --aw-color-secondary: rgb(11, 40, 133);
+    --aw-color-accent: rgb(185, 32, 103);
 
     --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-text-default: rgb(232, 235, 240);
+    --aw-color-text-muted: rgba(144, 157, 175, 0.95);
+    --aw-color-bg-page: rgb(36, 36, 38);
 
     ::selection {
-      background-color: black;
-      color: snow;
+      background-color: rgb(222, 224, 96);
+      color: rgb(31, 30, 32);
+    }
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 0 3px var(--aw-color-primary);
+  }
+
+  .logo:after {
+    content: '_';
+    opacity: 0;
+    animation: cursor 1s infinite;
+  }
+  @keyframes cursor {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 </style>
