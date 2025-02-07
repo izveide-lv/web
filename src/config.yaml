@@ -11,7 +11,7 @@ metadata:
   title:
     default: Izveide
     template: '%s — Izveide'
-  description: 'Ātru un ērtu statisko mājaslapu izveide'
+  description: 'Zibenīgi ātru ⚡ un drošu 🔐 mājaslapu izveide.'
   robots:
     index: true
     follow: true
