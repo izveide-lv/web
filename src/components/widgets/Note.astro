@@ -8,7 +8,7 @@ const posts = await findLatestPosts({ count: 1 });
 
 <section class="bg-primary not-prose">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
-    <span class="font-bold">Jaunākais blogā:</span>
+    <span class="font-bold text-white">Jaunākais blogā:</span>
 
     <a href=`/${posts[0]?.slug}` class="hover:underline">{posts[0]?.title}</a>
   </div>
