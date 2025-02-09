@@ -2,7 +2,7 @@
 title: Kā es izveidoju šo mājaslapu sešu stundu laikā
 excerpt: Kā notika izveide.lv izveides process, kādas tehnoloģijas izmantoju un
   kāpēc tā ir tik zibenīgi ātra?
-category: Jaunumi
+category: Raksti
 tags:
   - astro
   - netlify
