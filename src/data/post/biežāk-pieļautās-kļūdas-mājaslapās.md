@@ -68,8 +68,8 @@ Vairākās mājaslapās ievēroju, ka neilgi pēc to atvēršanas, pa visu ekrā
 
 Šo ievēroju ļoti daudzās mājaslapās — tiek norādīta kontaktinformācija, taču nav iespējams uzreiz uz tās uzklikšķināt, lai veiktu darbību, kas atvērs e-pasta klientu vai veiks zvanu no telefona. Ir ķēpīgi pārrakstīt vai iezīmēt un kopēt telefona numuru no mājaslapas, kāpēc gan lai uz tā nevarētu vienkārši uzspiest, lai veiktu zvanu?
 
-💌 Tā kā šī ir tik ļoti izplatīta problēma, pastāstīšu, kā to labot — tas ir elementāri! Jums ir jāizveido parasts **<a>** links, kura adresē (**href=** atribūtā) jāraksta 
-**tel:** prefikss telefoniem: **<a href="tel:+37125226526">+371 25226526</a>* un **mailto:** prefikss e-pastiem: **<a href="mailto:armands@labojam.lv>armands@labojam.lv</a>**. Gala rezultātā sanāks [+371 25226526](tel:+37125226526) un [armands@labojam.lv](mailto:armands@labojam.lv)  — vari droši uzklikšķināt uz šiem linkiem un paskatīties, kas notiks — telefonā vajadzētu uzreiz ievadīties numuram (zvans automātiski netiks sākts), kā arī vajadzētu atvērties e-pasta klientam.
+💌 Tā kā šī ir tik ļoti izplatīta problēma, pastāstīšu, kā to labot — tas ir elementāri! Jums ir jāizveido parasts `<a>` links, kura adresē (**href=** atribūtā) jāraksta 
+**tel:** prefikss telefoniem: `<a href="tel:+37125226526">+371 25226526</a>` un **mailto:** prefikss e-pastiem: `<a href="mailto:armands@labojam.lv>armands@labojam.lv</a>`. Gala rezultātā sanāks [+371 25226526](tel:+37125226526) un [armands@labojam.lv](mailto:armands@labojam.lv) — vari droši uzklikšķināt uz šiem linkiem un paskatīties, kas notiks — telefonā vajadzētu uzreiz ievadīties numuram (zvans automātiski netiks sākts), kā arī vajadzētu atvērties e-pasta klientam.
 
 ### 📱 Responsivitāte
 
