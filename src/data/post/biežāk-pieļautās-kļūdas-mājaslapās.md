@@ -17,11 +17,12 @@ image: ~/assets/images/kludas.png
 publishDate: 2025-02-09T02:26:00.000Z
 author: Armands Leimanis
 ---
+
 Pēdējās divās dienās esmu apskatījis vairāk nekā [40 mājaslapas un veicis to cepināšanu,](https://www.threads.net/@armandslei/post/DFxB_b0oK5K) un tagad vēlos padalīties ar saviem secinājumumiem par biežāk pieļautajām kļūdām mājaslapu izstrādē.
 
 ## 🍪 Sīkdatnes (cookies)
 
-Kopš Eiropas Savienībā tika pieņemta E-privātuma direktīva un Vispārīgā datu aizsardzības regula, mājaslapu lietošanas pieredze ir krietni pasliktinājusies tajās lapās, kas izmanto sīkdatnes, jo saskaņā ar likumu, mājaslapas apmeklētajam ir **jādod piekrišana nebūtisko sīkdatņu lietošanai** un to **jāvar arī atsaukt**, bez tam, tikpat vieglā veidā, kā bija tās pieņemt. Tas ir iemesls, kāpēc tik daudzās lapās pirmais, ko ieraugāt, ir banneris ar paziņojumu par sīkdatnēm. 
+Kopš Eiropas Savienībā tika pieņemta E-privātuma direktīva un Vispārīgā datu aizsardzības regula, mājaslapu lietošanas pieredze ir krietni pasliktinājusies tajās lapās, kas izmanto sīkdatnes, jo saskaņā ar likumu, mājaslapas apmeklētajam ir **jādod piekrišana nebūtisko sīkdatņu lietošanai** un to **jāvar arī atsaukt**, bez tam, tikpat vieglā veidā, kā bija tās pieņemt. Tas ir iemesls, kāpēc tik daudzās lapās pirmais, ko ieraugāt, ir banneris ar paziņojumu par sīkdatnēm.
 
 Gandrīz visās no manis apskatītajām lapām, sīkdatņu piekrišana nebija ieviesta korekti. Ja Datu Valsts Inspekcija būtu savu uzdevumu augstumos, par to varētu draudēt arī naudassodi. **Sīkdatnes nedrīkst tikt iestatītas pirms lietotājs ir izdarījis izvēli par to pieņemšanu!** Kā arī, ja tiek lietotas sīkdatnes, **lapā ir jābūt privātuma vai sīkdatņu politikai**, kurā ir aprakstīts kā sīkdatnes tiek izmantotas.
 
@@ -29,12 +30,12 @@ Gandrīz visās no manis apskatītajām lapām, sīkdatņu piekrišana nebija ie
 
 Nebūtiskās sīkdatnes ir **visas lietotāju izsekošanas un analītikas sīkdatnes**, kas nav nepieciešamas, lai nodrošinātu lapas pamata funkcionalitāti. Piekrišana nav nepieciešama:
 
-* Komunikācijas sīkdatnēm, kas nodrošina saziņu ar serveri un ir nepieciešamas pieprasījumu veikšanai uz vairākiem serveriem, ja tiek izmantota serveru noslodzes dalīšana (load balancing).
-* Sīkdatnēm, kas ļauj nodrošināt pakalpojumu, ko lietotājs pats ir pieprasījis, piemēram autentifikācijai vai preču groža funkcionalitātei.
+- Komunikācijas sīkdatnēm, kas nodrošina saziņu ar serveri un ir nepieciešamas pieprasījumu veikšanai uz vairākiem serveriem, ja tiek izmantota serveru noslodzes dalīšana (load balancing).
+- Sīkdatnēm, kas ļauj nodrošināt pakalpojumu, ko lietotājs pats ir pieprasījis, piemēram autentifikācijai vai preču groža funkcionalitātei.
 
 ### ❌ Kāda veida sīkdatnēm ir nepieciešama lietotāja piekrišana?
 
-* Sīkdatnēm, kas nodrošina jebkāda veida analītiku, tirgus izpēti vai reklāmu, kas saistīta ar lietotāju paradumu pētīšanu. Ja izmanto Google Analytics, Facebook Pixel vai pat iegulsti lapā YouTube video, ir nepieciešama lietotāja piekrišana.
+- Sīkdatnēm, kas nodrošina jebkāda veida analītiku, tirgus izpēti vai reklāmu, kas saistīta ar lietotāju paradumu pētīšanu. Ja izmanto Google Analytics, Facebook Pixel vai pat iegulsti lapā YouTube video, ir nepieciešama lietotāja piekrišana.
 
 ### 💡 Ko darīt ar sīkdatnēm?
 
@@ -50,7 +51,7 @@ Estētiski baudāma krāsu palete ar labu kontrastu teksta lasāmībai ir vitāl
 
 ### 🔤 Fontu izvēle
 
-Lapām nevajadzētu izmantot sistēmas noklusētos fontus. Ir pieejami ļoti daudz webfontu, kas ir skaisti, viegli lasāmi un uzlabos lapas estētiku par visiem 💯. [Google Fonts](https://coolors.co/generate) ir iespējams izvēlēties bezmaksas fontus, ko var brīvi lietot savā mājaslapā, un to ieviešana nav pārāk sarežģīta. 
+Lapām nevajadzētu izmantot sistēmas noklusētos fontus. Ir pieejami ļoti daudz webfontu, kas ir skaisti, viegli lasāmi un uzlabos lapas estētiku par visiem 💯. [Google Fonts](https://coolors.co/generate) ir iespējams izvēlēties bezmaksas fontus, ko var brīvi lietot savā mājaslapā, un to ieviešana nav pārāk sarežģīta.
 
 ## 🤔 Nepārdomāta lapas lietojamība
 
@@ -68,8 +69,7 @@ Vairākās mājaslapās ievēroju, ka neilgi pēc to atvēršanas, pa visu ekrā
 
 Šo ievēroju ļoti daudzās mājaslapās — tiek norādīta kontaktinformācija, taču nav iespējams uzreiz uz tās uzklikšķināt, lai veiktu darbību, kas atvērs e-pasta klientu vai veiks zvanu no telefona. Ir ķēpīgi pārrakstīt vai iezīmēt un kopēt telefona numuru no mājaslapas, kāpēc gan lai uz tā nevarētu vienkārši uzspiest, lai veiktu zvanu?
 
-💌 Tā kā šī ir tik ļoti izplatīta problēma, pastāstīšu, kā to labot — tas ir elementāri! Jums ir jāizveido parasts `<a>` links, kura adresē (**href=** atribūtā) jāraksta 
-**tel:** prefikss telefoniem: `<a href="tel:+37125226526">+371 25226526</a>` un **mailto:** prefikss e-pastiem: `<a href="mailto:armands@labojam.lv>armands@labojam.lv</a>`. Gala rezultātā sanāks [+371 25226526](tel:+37125226526) un [armands@labojam.lv](mailto:armands@labojam.lv) — vari droši uzklikšķināt uz šiem linkiem un paskatīties, kas notiks — telefonā vajadzētu uzreiz ievadīties numuram (zvans automātiski netiks sākts), kā arī vajadzētu atvērties e-pasta klientam.
+💌 Tā kā šī ir tik ļoti izplatīta problēma, pastāstīšu, kā to labot — tas ir elementāri! Jums ir jāizveido parasts `<a>` links, kura adresē (**href=** atribūtā) jāraksta **tel:** prefikss telefoniem: `<a href="tel:+371numurs">+371 numurs</a>` un **mailto:** prefikss e-pastiem: `<a href="mailto:e@pasts.lv>e@pasts.lv</a>`. Gala rezultātā sanāks [+371 25226526](tel:+37125226526) un [armands@labojam.lv](mailto:armands@labojam.lv) — vari droši uzklikšķināt uz šiem linkiem un paskatīties, kas notiks — telefonā vajadzētu uzreiz ievadīties numuram (zvans automātiski netiks sākts), kā arī vajadzētu atvērties e-pasta klientam.
 
 ### 📱 Responsivitāte
 
@@ -77,6 +77,6 @@ Vairākās mājaslapās ievēroju, ka neilgi pēc to atvēršanas, pa visu ekrā
 
 ## Nobeiguma vietā
 
-Es esmu mājaslapu izstrādātājs ar daudzu gadu pieredzi, kas mīl savu darbu un dara to no 🧡. Es priecāšos, ja varēšu palīdzēt uzlabot vai izveidot tavu mājaslapu, tāpēc, ja tev ir nepieciešamas ātras, drošas un labi pārdomātas lapas izveide, [sazinies ar mani](/contact)! Tāpat vari sazināties (vai ierakstīt [Threads atbildēs](https://www.threads.net/@armandslei/post/DFxB_b0oK5K)), ja vēlies, lai **bez maksas** 🆓 izvērtēju tavu mājaslapu vai par *nelielu* atlīdzību kļūdas palīdzu salabot.
+Es esmu mājaslapu izstrādātājs ar daudzu gadu pieredzi, kas mīl savu darbu un dara to no 🧡. Es priecāšos, ja varēšu palīdzēt uzlabot vai izveidot tavu mājaslapu, tāpēc, ja tev ir nepieciešamas ātras, drošas un labi pārdomātas lapas izveide, [sazinies ar mani](/contact)! Tāpat vari sazināties (vai ierakstīt [Threads atbildēs](https://www.threads.net/@armandslei/post/DFxB_b0oK5K)), ja vēlies, lai **bez maksas** 🆓 izvērtēju tavu mājaslapu vai par _nelielu_ atlīdzību kļūdas palīdzu salabot.
 
 Paldies, ka izlasīji šo rakstu, ceru, ka bija noderīgi! 😇

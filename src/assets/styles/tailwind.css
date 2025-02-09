@@ -90,3 +90,12 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+background-color: rgba(0, 0, 0, 0.05);
+}
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
+  content: none;
+}
