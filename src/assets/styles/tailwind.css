@@ -95,6 +95,11 @@
 background-color: rgba(0, 0, 0, 0.05);
 }
 
+
+.dark .prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  background-color: rgba(255, 255, 255, 0.10);
+  }
+  
 .prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before,
 .prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
   content: none;
