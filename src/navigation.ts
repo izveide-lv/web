@@ -32,6 +32,10 @@ export const headerData = {
       href: getPermalink('blog'),
     },
     {
+      text: 'Mājaslapas novērtēšana',
+      href: "https://cep.izveide.lv",
+    },
+    {
       text: 'Kontakti',
       href: getPermalink('contact'),
     },
@@ -66,9 +70,17 @@ export const footerData = {
       ],
     },
     {
+      title: 'Noderīgi',
+      links: [
+        { text: 'Mājaslapas novērtēšana', href: 'https://cep.izveide.lv' },
+        { text: 'Mājaslapas analītika', href: 'https://stats.izveide.lv/share/lkbgT7KjE3faATdh/izveide.lv' },
+      ],
+    },
+    {
       title: 'Kontakti',
       links: [
         { text: 'Sazināties', href: '/contact' },
+        { text: 'Threads', href: 'https://threads.net/@armandslei' },
       ],
     },
     
