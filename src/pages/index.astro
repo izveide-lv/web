@@ -20,6 +20,9 @@ import iveta from '~/assets/images/iveta.webp';
 import raimonds from '~/assets/images/raimonds.webp';
 import ivars from '~/assets/images/ivars.webp';
 import armands from '~/assets/images/armands.webp';
+import agnese from '~/assets/images/agnese.webp';
+import raivo from '~/assets/images/raivo.webp';
+
 import Pricing from '~/components/widgets/Pricing.astro';
 ---
 
@@ -102,10 +105,23 @@ import Pricing from '~/components/widgets/Pricing.astro';
          <p>Man ir patiess prieks, ka Armands atsaucās manam lūgumam un zinu, ka nevaru vēlēties labāku komandu. Es tiku saredzēta un sadzirdēta, kas man ir svarīgi.</p>
          <p>Liels paldies Armandam un viņa komandai par lielisko darbu, un no sirds vēlos ieteikt arī jums, ja ir nepieciešama jauna vai uzlabota mājaslapa.</p>`,
         name: 'Iveta Parravani',
-        job: 'Biedrība "Debesmanna"',
+        job: 'Debesmanna',
+        url: 'https://debesmanna.com',
         image: {
           src: iveta,
           alt: 'Iveta Parravani',
+        },
+      },
+      {
+        testimonial: `<p>Pirms nedēļas biju izveidojusi jauno interneta veikalu Mozello.lv, biju izdarījusi tik daudz, cik mācēju un sapratu. Un kā no zilām debesīm, pamanīju piedāvājumu: <a href="https://cep.izveide.lv" target="_blank" class="underline font-bold">Novērtēt mājaslapu bezmaksas</a>.</p>
+        <p>Aizpildīju vienkāršu kontaktu formu un jau pavisam drīz saņēmu plašu un konkrētu skaidrojumu ar manas lapas kļūdām un nepilnībām. Par laimi to nebija ļoti daudz, taču dažas no tām, man šķita pārāk sarežģīti pašai izlabot.</p>
+        <p>Jautāju, vai Armands man var palīdzēt, un mēs vienojāmies par abpusēji izdevīgu darījumu. Visas problēmas tika novērstas, lapa izskatās daudz labāk un esmu ārkārtīgi pateicīga par paveikto!</p>`,
+        name: 'Agnese Dubkova',
+        job: 'Dzemdību krekls',
+        url: 'https://dzemdibukrekls.lv',
+        image: {
+          src: agnese,
+          alt: 'Agnese Dubkova',
         },
       },
       {
@@ -113,6 +129,7 @@ import Pricing from '~/components/widgets/Pricing.astro';
         <p>Pie Armanda var griezties ne tikai lapu vai aplikāciju programmēšanā no nulles, bet arī gadījumos, kad ir jāsalabo vai jāpapildina esošais risinājums. Droši zvaniet, rakstiet, traucējiet viņu! Silti iesaku un rekomendēju.</p>`,
         name: 'Raimonds Platacis',
         job: 'Nonullēšanās',
+        url: 'http://00000000.lv',
         image: {
           src: raimonds,
           alt: 'Raimonds Platacis',
@@ -123,20 +140,23 @@ import Pricing from '~/components/widgets/Pricing.astro';
         <p>Tehniskie risinājumi tiek izdarīti precīzi kā runāts, tai pat laikā vienmēr var sagaidīt ieteikumus no pieredzes, kas ļoti noder veiksmīgai projekta attīstībai.</p>`,
         name: 'Ivars Mirošnikovs',
         job: 'VIVID TECH',
+        url: 'https://vividtech.eu',
         image: {
           src: ivars,
           alt: 'Ivars Mirošnikovs',
         },
       },
-      // {
-      //   testimonial: `Ātra un efektīva palīdzība IT jautājumos. Profesionāli un nestandarta risinājumi. Attieksme ir ļoti pretimnākoša.`,
-      //   name: 'Raivo Klotiņš',
-      //   job: 'Zvērināts advokāts',
-      //   image: {
-      //     src: raivo,
-      //     alt: 'Raivo Klotiņš Image',
-      //   },
-      // },
+
+      {
+        testimonial: `<p>Ātra un efektīva palīdzība IT jautājumos. Profesionāli un nestandarta risinājumi. Attieksme ir ļoti pretimnākoša.</p>`,
+        name: 'Raivo Klotiņš',
+        job: 'Zvērināts advokāts',
+        url: 'https://klotins.lv',
+        image: {
+          src: raivo,
+          alt: 'Raivo Klotiņš',
+        },
+      },
     ]}
   />
 
@@ -182,7 +202,7 @@ import Pricing from '~/components/widgets/Pricing.astro';
       {
         title: 'Vairāk nekā 8 gadu pieredze',
         description:
-          'Programmēt sāku pirms vairāk nekā 8 gadiem digitālajā aģentūrā un kopš tā laika esmu strādājis pie vairāk nekā 50 projektiem.',
+          'Programmēt sāku pirms vairāk nekā 8 gadiem un kopš tā laika esmu strādājis pie vairāk nekā 50 projektiem.',
       },
       {
         title: 'Darbs kā aizraušanās',
@@ -190,7 +210,7 @@ import Pricing from '~/components/widgets/Pricing.astro';
       },
       {
         title: 'Neformāla, draudzīga pieeja',
-        description: 'Esmu atvērts un vienmēr gatavs uzklausīt visas klientu vēlmes un ar mani ir viegli sastrādāties.',
+        description: 'Esmu atvērts un vienmēr gatavs uzklausīt visas klientu vēlmes. Ar mani ir viegli sastrādāties.',
       },
     ]}
     image={{
@@ -200,8 +220,7 @@ import Pricing from '~/components/widgets/Pricing.astro';
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Darbu daru ar prieku 😊</h3>
-      Programmēšanu esmu apguvis pašmācības ceļā un katru dienu turpinu papildināt savas zināšanas. Mani interesentē jaunākās
-      tehnoloģijas un modernākie risinājumi.
+      Programmēšanu esmu apguvis pašmācības ceļā un katru dienu turpinu papildināt savas zināšanas.
     </Fragment>
 
     <Fragment slot="bg">
