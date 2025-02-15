@@ -74,6 +74,8 @@ export const footerData = {
       links: [
         { text: 'Mājaslapas novērtēšana', href: 'https://cep.izveide.lv' },
         { text: 'Mājaslapas analītika', href: 'https://stats.izveide.lv/share/lkbgT7KjE3faATdh/izveide.lv' },
+        { text: 'Mājaslapas labojumi', href: 'https://labojam.lv' },
+        { text: 'Mājaslapu katalogs', href: 'https://latvija.ai' },
       ],
     },
     {
