@@ -99,6 +99,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/izveide-lv/web' },
   ],
   footNote: `
-    Veidots SIA "<a class="text-blue-600 underline dark:text-muted" href="https://labojam.lv">Sociālais kods</a>"
+    Veidots SIA "<a class="text-blue-600 underline dark:text-muted" href="https://socialais.dev">Sociālais kods</a>"
   `,
 };
